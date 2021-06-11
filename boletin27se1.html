@@ -673,7 +673,7 @@ class="cmmi-10">λ</span>. La característica
 principal de las metodologías propuestas en esta tesis es que no dependen ni de la ecuación,
 ni de geometría del reactor, ni del tipo de problema de valores propios, ni del número
 de grupos de energía. En la Figura <a 
-href="#x4-12005r5">5<!--tex4ht:ref: fig:nea --></a> se puede observar el ﬂujo térmico en un
+href="#x4-12003r5">5<!--tex4ht:ref: fig:nea --></a> se puede observar el ﬂujo térmico en un
 reactor con una geometría rectangular (tipo PWR) y en un reactor hexagonal (tipo
 VVER).
 </p>
@@ -683,47 +683,36 @@ VVER).
 
                                                                           
 <a 
- id="x4-12005r5"></a>
+ id="x4-12003r5"></a>
                                                                           
 
                                                                           
-<a 
- id="x4-12003r1"></a>
-<div class="subfigure"><table><tr><td style="text-align:left"><img 
+<div class="tabular"> <table id="TBL-3" class="tabular" 
+cellspacing="0" cellpadding="0"  
+><colgroup id="TBL-3-1g"><col 
+id="TBL-3-1" /><col 
+id="TBL-3-2" /></colgroup><tr  
+ style="vertical-align:baseline;" id="TBL-3-1-"><td  style="white-space:nowrap; text-align:center;" id="TBL-3-1-1"  
+class="td11">             <img 
 src="nea.jpg" alt="PIC"  
-width="143" height="184"  />
-<div class="subfigcaption"><span 
-class="ecrm-0800">(a)</span>
-<span 
-class="ecrm-0800">Reactor</span>
-<span 
-class="ecrm-0800">rectangular</span>
-<span 
-class="ecrm-0800">(tipo</span>
-<span 
-class="ecrm-0800">PWR)</span></div></td></tr></table></div> <a 
- id="x4-12004r2"></a><div class="subfigure"><table><tr><td style="text-align:left"><img 
+width="143" height="184"  />                    </td><td  style="white-space:nowrap; text-align:center;" id="TBL-3-1-2"  
+class="td11">             <img 
 src="vver440.jpg" alt="PIC"  
-width="170" height="184"  />
-<div class="subfigcaption"><span 
-class="ecrm-0800">(b)</span>
-<span 
-class="ecrm-0800">Reactor</span>
-<span 
-class="ecrm-0800">hexagonal</span>
-<span 
-class="ecrm-0800">(tipo</span>
-<span 
-class="ecrm-0800">VVER)</span></div></td></tr></table></div>
+width="170" height="184"  />                    </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-3-2-"><td  style="white-space:nowrap; text-align:center;" id="TBL-3-2-1"  
+class="td11"> Reactor rectangular (tipo PWR)  </td><td  style="white-space:nowrap; text-align:center;" id="TBL-3-2-2"  
+class="td11"> Reactor hexagonal (tipo VVER)  </td></tr></table>
+</div>
 <a 
- id="x4-12006"></a>
+ id="x4-12004"></a>
 <figcaption class="caption" ><span class="id">Figura 5:</span><span  
-class="content"> Flujo neutrónico térmico en estado crítico.</span></figcaption><!--tex4ht:label?: x4-12005r1 -->
+class="content"> Flujo neutrónico térmico en estado crítico.</span></figcaption><!--tex4ht:label?: x4-12003r1 -->
                                                                           
 
                                                                           
    </figure>
-<!--l. 67--><p class="indent" >   En particular, la tesis recoge y utiliza una selección de los resolvedores de problemas de
+<!--l. 82--><p class="indent" >   En particular, la tesis recoge y utiliza una selección de los resolvedores de problemas de
 autovalores más conocidos para el cálculo neutrónico, como el método de la potencia, el
 método de Krylov-Schur o el método de Davidson Generalizado. Sin embargo, también
 presenta varios resolvedores en bloque para aprovechar la estructura de bloques de las matrices
@@ -733,7 +722,7 @@ generalizaciones del método de Newton modiﬁcado junto con un precondicionador
 bloques. Finalmente, se presenta un resolvedor híbrido basado en los dos métodos
 anteriores que acelera considerablemente la convergencia con respecto a todos los
 anteriores.
-</p><!--l. 69--><p class="indent" >   A continuación, se estudian varias técnicas numéricas para mejorar la implementación
+</p><!--l. 84--><p class="indent" >   A continuación, se estudian varias técnicas numéricas para mejorar la implementación
 del código. En primer lugar, se presentan técnicas de inicialización multinivel basadas en
 diferentes mallas, grados de elementos ﬁnitos y momentos de neutrones. En segundo lugar, se
 exponen diferentes estrategias de precondicionamiento a bloques y multinivel, y se comparan
@@ -746,7 +735,7 @@ computacionales. Para aplicar esta técnica, los algoritmos se han adaptado para
 aplicados mediante productos matriz-vector. Los resultados numéricos demuestran la
 eﬁcacia de las metodologías propuestas en grandes y complejos reactores nucleares de
 referencia.
-</p><!--l. 72--><p class="indent" >   En última parte de la tesis se implementa un método modal actualizado para integrar la
+</p><!--l. 87--><p class="indent" >   En última parte de la tesis se implementa un método modal actualizado para integrar la
 ecuación de difusión neutrónica dependiente del tiempo. El método modal descompone el
 ﬂujo neutrónico en el tiempo como una suma de varias funciones espaciales asociadas a la
 conﬁguración inicial del reactor multiplicada por unos coeﬁcientes temporales. En este
@@ -761,7 +750,7 @@ rendimiento de este esquema se prueba en algunos problemas de referencia con dif
 geometrías y tipos de perturbaciones locales. Se compara con un método de Euler
 implícito. Los resultados numéricos muestran la competitividad del método modal
 adaptativo.
-</p><!--l. 74--><p class="indent" >   Esta metodología se ha incorporado en el código neutrónico <span 
+</p><!--l. 89--><p class="indent" >   Esta metodología se ha incorporado en el código neutrónico <span 
 class="ectt-1000">FEMFFUSION </span>basado en el
 uso de métodos de elementos ﬁnitos para diferentes aproximaciones de la ecuación de
 transporte neutrónico, que está en desarrollo en la UPV. Este software está bajo una
@@ -783,8 +772,8 @@ etc.
 </p>
 <div class="center" 
 >
-<!--l. 79--><p class="noindent" >
-</p><!--l. 81--><p class="noindent" >_____________________________________ <span 
+<!--l. 94--><p class="noindent" >
+</p><!--l. 96--><p class="noindent" >_____________________________________ <span 
 class="cmsy-10x-x-120">◇</span><span 
 class="cmsy-10x-x-207">◇</span><span 
 class="cmsy-10x-x-120">◇</span>_____________________</p></div>
