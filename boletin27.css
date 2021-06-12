@@ -6,7 +6,7 @@ img {
 
 a {
     color: #fb3199;
-} 
+}
 /* start css.sty */
 .cmr-7{font-size:70%;}
 .cmmi-5{font-size:50%;font-style: italic;}
@@ -257,6 +257,7 @@ a {
 .ecss-0900{ font-family: sans-serif;}
 .ecss-0900{ font-family: sans-serif;}
 .small-caps{font-variant: small-caps; }
+.letra-figura{font-size:75%; }
 p{margin-top:0;margin-bottom:0}
 p.indent{text-indent:0;}
 p + p{margin-top:1em;}
