@@ -4,6 +4,9 @@ img {
   margin-right: auto;
 }
 
+p.noindent { text-indent: 0em; text-align:justify;}
+p.indent{ text-indent: 1.5em; text-align:justify;}
+
 a {
     color: #fb3199;
 }
